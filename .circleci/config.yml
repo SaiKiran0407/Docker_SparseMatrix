@@ -45,11 +45,11 @@ workflows:
       - run-test-app:
           filters:
             branches:
-              only: main
+              only: master
       - build-and-push:
           requires:
             - run-test-app
           filters:
             branches:
-              only: main
+              only: master
 
