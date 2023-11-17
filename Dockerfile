@@ -6,7 +6,7 @@ WORKDIR /usr/src/sparse_matrix
 COPY sparse_recommender.py .
 COPY test_sparse_recommender.py .
 
-RUN pip install numpy pytest
+RUN pip install --progress-bar off numpy pytest
 
 # run
 CMD ["python", "sparse_recommender.py"]
