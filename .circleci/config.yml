@@ -46,7 +46,7 @@ workflows:
           filters:
             branches:
               only: main
-      - build-and-push
+      - build-and-push:
           requires:
             - run-test-app:
           filters:
