@@ -23,7 +23,7 @@ jobs:
           command: python sparse_recommender.py
       - run:
           name: Run Test Cases 
-          command: pytest test_ sparse_recommender.py
+          command: pytest test_sparse_recommender.py
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
