@@ -42,13 +42,13 @@ workflows:
   version: 2
   sparse-recommender:
     jobs:
-      - run-test-app
+      - run-test-app:
           filters:
             branches:
               only: main
       - build-and-push
           requires:
-            - run-test-app
+            - run-test-app:
           filters:
             branches:
               only: main
